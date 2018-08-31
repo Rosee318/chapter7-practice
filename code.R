@@ -1,10 +1,14 @@
+# 혹시 설치를 안하셨다면
+#install.packages("ggthemes")
+#install.packages("gridExtra")
+
 library(tidyverse)
 library(ggthemes)
 
 #-------------------------------------------------------
 # 실습1 : 어종별 어획량 차트 함수 (line plots)
 #-------------------------------------------------------
-df <- read_csv("fish.csv")
+df <- read_csv("data/fish.csv")
 
 # charts function
 chart <- function(x){
@@ -32,7 +36,6 @@ c6 <- chart("정어리")
 c7 <- chart("미역")
 c8 <- chart("대게")
 
-#install.packages("gridExtra")
 gridExtra::grid.arrange(c1, c2, c3, c4, ncol = 2)
 
 
