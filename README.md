@@ -7,5 +7,5 @@
 - Shall we delete the ZIP file '/Users/Benjamin/Desktop/chapter1-intro-master.zip'? (answer : Yup)
 
 ```
-use_course("https://github.com/workshop-rddj/chapter7-practice/archive/master.zip")
+usethis::use_course("https://github.com/workshop-rddj/chapter7-practice/archive/master.zip")
 ```
