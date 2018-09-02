@@ -4,6 +4,18 @@
 
 library(tidyverse)
 library(ggthemes)
+library(gcookbook)
+#-------------------------------------------------------
+# some tips
+#-------------------------------------------------------
+
+p <- ggplot(faithful, aes(x=eruptions, y=waiting)) + geom_point()
+p + annotate("text", x=3, y=48, label = "Group 1") +
+  annotate("text", x=4.5, y=66, label = "한글은 family 설정", family = "NanumGothic")
+
+
+
+
 
 #-------------------------------------------------------
 # 실습1 : 어종별 어획량 차트 함수 (line plots)
